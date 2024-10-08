@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background: rgb(137, 137, 224);
+    /* width: 100%; */
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+
+.name{
+    position: absolute;
+    top: 10px;
+    left: 30px;   
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    
+}
+
+
+.avatar{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgb(85, 90, 115),
+     rgb(38, 177, 126) 25%, rgb(70, 69, 145) 
+     50%, rgb(75, 87, 225) 75%, rgb(66, 87, 125));
+}
+.contai-ava{
+    width: 40%;
+    overflow: hidden;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 14px;
+}
+.avatar img{
+    width: 100%;
+    height: auto;
+      
+    overflow: hidden;
+    
+    object-fit: cover;
+    /* transform: scale(1.2); */
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+    transform-origin: center;
+}
+
+
+.infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    background: linear-gradient(45deg, #6165b5, #1d9fc0, #3a41cd);
+}
+.infor-text{
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+.infor-introducion{
+    font-size: 40px;
+    color: white;
+}
+/* ---------- */
+
+:root{
+    --fb--color: #0866FF;
+    --ig--color: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4, #FEDA77);
+    --tt--color: linear-gradient(45deg, #69C9D0, #EE1D52, #000000);
+    --git--color:  #181717;
+
+}
+.infor-butt{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    color: #000;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0px;
+    /* outline: none; */
+    cursor: pointer;
+    transition: transform 0.7s ease;
+    
+}
+.button a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+.button:hover{
+    /* font-size: 25px; */
+    transform: scale(1.1);
+    /* background: #54a7d0; */
+    color: white;
+}
+
+.fb:hover{
+    background-color: var(--fb--color);
+    
+}
+
+.ig:hover{
+    color: white;    
+    background: var(--ig--color);
+}
+
+.tt:hover{
+    background: var(--tt--color);
+}
+
+.git:hover{
+    background-color: var(--git--color);
+}
